@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Birthday!</title>
+        <style>
+            body{
+                background: url("http://i.123g.us/c/birth_happybirthday/card/322876.gif");
+                background-position: center;
+                background-size:auto;
+                background-repeat:inherit;
+            }
+            button{
+                width: 20%;
+                height: 40%;
+            }
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body><center>
+        <br>
+        <br>
+        <button class="btn-warning" onclick="play();">Play Audio</button>
+        <audio id="aud" loop>
+        <source src="Tune.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            console.log(document.getElementById("aud").src);
+            function play() {
+                document.getElementById("aud").play();
+            }            
+        </script>
+    </center></body>
+</html>
